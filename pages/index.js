@@ -1,12 +1,9 @@
-import Head from 'next/head'
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Apriadi</title>
-        <meta name="description" content="Portfolio Apriadi, S.Si" />
-      </Head>
-    </div>
+    <Layout props={{ title: 'Apriadi - Web & Android Development' }}>
+      content
+    </Layout>
   )
 }
