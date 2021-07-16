@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import NavigasiMenu from './navigation'
+import { GlobalProvider } from '../provider/globalProvider'
 
 const Layout = ({children, props}) => {
     return(
-        <div className="container">
+        <GlobalProvider>
             <Head>
                 <title>{props.title}</title>
                 <meta name="description" content="Portfolio Apriadi, S.Si" />
@@ -16,7 +17,7 @@ const Layout = ({children, props}) => {
                     { children }
                 </div>
             </div>
-        </div>
+        </GlobalProvider>
     )
 }
 

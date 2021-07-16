@@ -71,7 +71,7 @@ const NavigasiMenu = () => {
               </div>
 
               <div className="flex justify-center mt-10 mb-5">
-                <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-10 rounded">
+                <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-10 rounded">
                     Hire Me
                 </button>
               </div>
