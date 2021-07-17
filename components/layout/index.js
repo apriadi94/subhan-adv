@@ -29,7 +29,7 @@ const Layout = ({children, props}) => {
                             </div>
                         </div>
                     </div>
-                    <div className={`hidden md:block space-x-2 space-y-2 w-full md:w-72 md:max-h-screen overflow-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch`} style={{ backgroundColor: '#54B689' }}>
+                    <div className={`sticky top-0 hidden md:block space-x-2 space-y-2 w-full md:w-72 md:max-h-screen overflow-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch`} style={{ backgroundColor: '#54B689' }}>
                         <NavigasiMenu/>
                     </div> 
                                 
@@ -39,7 +39,7 @@ const Layout = ({children, props}) => {
                         </Animated>
                     </div>
 
-                    <div className="w-full md:w-full">
+                    <div className="w-full md:w-full float-left">
                         { children }
                     </div>
                 </div>
