@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 
+.open-animation{
+  visibility: visible;
+  max-height: auto;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 1000ms, max-height 300ms;
+}
+
+.close-animation{
+  visibility: hidden;
+  max-height: 0;
+  transition: visibility 0s linear 1000ms, opacity 1000ms, max-height 1000ms;
+}
+
 .text-math{
     font-family: 'STIX Two Math', serif;
 }
