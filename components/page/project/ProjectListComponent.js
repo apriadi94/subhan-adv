@@ -1,15 +1,14 @@
 import { useState, useEffect, useCallback } from 'react'
-import {Animated} from "react-animated-css";
+import QueueAnim from 'rc-queue-anim';
 import axios from 'axios'
 
 const ProjectListComponent = () => {
     const [active, setActive] = useState('all')
     const [projects, setProjects] = useState([])
-    const [animateVisible, setaAnimateVisible] = useState(false)
     const [loading, setLoading] = useState(true)
 
     const fetchProjects = useCallback(async () => {
-        setaAnimateVisible(false)
+        setProjects([])
         await axios({
             method: 'get',
             url : 'http://localhost:3000/api/project',
@@ -17,18 +16,17 @@ const ProjectListComponent = () => {
                 Accept : 'aplication/json'
             }
         }).then(res => {
-           if(active === 'android'){
-            setProjects(res.data.filter(project => project.type === 'android'))
-           }
-           if(active === 'web'){
-            setProjects(res.data.filter(project => project.type === 'web'))
-           }
-           if(active === 'all'){
-            setProjects(res.data)
-           } 
+            if(active === 'all'){
+                setProjects(res.data)
+            }
+            if(active === 'android'){
+                setProjects(res.data.filter(project => project.type === 'android'))
+            }
+            if(active === 'web'){
+                setProjects(res.data.filter(project => project.type === 'web'))
+            }
         })
         setLoading(false)
-        setaAnimateVisible(true)
     }, [active])
     
     useEffect(() => {
@@ -42,11 +40,15 @@ const ProjectListComponent = () => {
                 <p onClick={() => setActive('web')} className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'web' ? 'border-b-4' : null}`}>Web App</p>
                 <p onClick={() => setActive('android')}  className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'android' ? 'border-b-4' : null}`}>Android App</p>
             </div>
-            <div className="lg:grid grid-cols-2 p-10 mx-11 mt-5 lg:mx-0 gap-4">
+            <div>
+                <QueueAnim  className="lg:grid grid-cols-2 p-10 mx-11 mt-5 lg:mx-0 gap-4"
+                 type="bottom"
+                 interval={[100, 0]}
+                 duration={[130, 0]}
+                >
                 {
                     projects.map((project, index) => 
-                        <Animated animationIn="tada" isVisible={animateVisible}>
-                            <div key={index} className="lg:flex mt-5 lg:mt-0 bg-gray-100 rounded-sm">
+                            <div key={project.id} className="lg:flex mt-5 lg:mt-0 bg-gray-100 rounded-sm duration-500 hover:bg-gray-300">
                                 <img src={project.imageUrl} className="w-full h-52 lg:h-full lg:w-40 rounded-sm"/>
                                 <div className="grid mx-2 lg:ml-10 mt-3">
                                     <div>
@@ -60,9 +62,9 @@ const ProjectListComponent = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Animated>
                     )
                 }
+                </QueueAnim>
             </div>
         </div>
     )
