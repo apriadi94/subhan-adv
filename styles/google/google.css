@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
 
+.text-900{
+  font-weight: 900!important;
+  letter-spacing: 5px;
+}
 .open-animation{
   visibility: visible;
   max-height: auto;
@@ -46,4 +50,8 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
     overflow: hidden;
+  }
+
+  .top {
+    box-shadow: 0 -5px 5px -5px #333;
   }
