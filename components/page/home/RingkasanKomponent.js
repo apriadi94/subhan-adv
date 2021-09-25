@@ -110,7 +110,7 @@ const RingkasanKomponent = () => {
                 <hr className="my-10"/>
                 
             </div>
-            <div className="ml-10">
+            <div className="mx-10">
                 <div className="md:flex md:gap-5">
                     <img src="subhan3.jpeg" className="w-full mb-5 md:mb-0 md:w-40"/>
                     <img src="subhan4.jpeg" className="w-full mb-5 md:mb-0 md:w-40"/>
