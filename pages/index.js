@@ -4,7 +4,7 @@ import RingkasanKomponent from "../components/page/home/RingkasanKomponent"
 
 export default function Home() {
   return (
-    <Layout props={{ title: 'Apriadi - Web & Android Development' }}>
+    <Layout props={{ title: 'Advokat Subhan - Konsultan Hukum' }}>
       <div className="bg-gray-100">
         <HeaderComponent/>
       </div>

@@ -22,10 +22,10 @@ const NavigasiMenu = () => {
     return(
         <div className="md:pt-5 mx-5">
            <div>
-               <h1 className="hidden md:block text-center font-bold text-4xl text-white text-math">Apriadi</h1>
-               <img className="mt-5 w-40 h-40 rounded-full mx-auto" src="/apriadi.jpg"/>
+               <h1 className="hidden md:block text-center font-bold text-4xl text-white text-math">M. Subhan</h1>
+               <img className="mt-5 w-40 h-40 rounded-full mx-auto" src="/subhan-kiri.jpeg"/>
                <p className="text-center text-sm mt-2 text-white text-math">
-                    Hi, my name is Apriadi and I'm a junior javascript developer. welcome to my portfolio website!
+                    Hidup itu simpel, administrasinya yang sulit!
                </p>
                <div className="mx-auto ml-28 mr-28 p-4 mt-4 md:ml-5 md:mr-5 grid grid-cols-4 md:gap-5">
                     <div className="bg-white w-7 h-7 rounded-full text-center">
@@ -46,8 +46,8 @@ const NavigasiMenu = () => {
                     <div className="mx-5 mb-5">
                         <hr className="w-full" style={{ borderColor: '#4DA87E' }}/>
                     </div>
-                    <NavMenu router={router} asPath={asPath} routePath={'/'} routeName={'About Me'} icon={faUser}/>
-                    <NavMenu router={router} asPath={asPath} routePath={'/project'} routeName={'Project'} icon={faLaptopCode}/>
+                    <NavMenu router={router} asPath={asPath} routePath={'/'} routeName={'Tentang Saya'} icon={faUser}/>
+                    <NavMenu router={router} asPath={asPath} routePath={'/project'} routeName={'Klient Kami'} icon={faLaptopCode}/>
                     <NavMenu router={router} asPath={asPath} routePath={'/resume'} routeName={'Resume / CV'} icon={faFileCode}/>
                     <NavMenu router={router} asPath={asPath} routePath={'/service'} routeName={'Service & Pricing'} icon={faNetworkWired}/>
                     <NavMenu router={router} asPath={asPath} routePath={'/github'} routeName={'Github Activity'} icon={faGithub}/>

@@ -7,7 +7,7 @@ const ResumeComponent = () => {
             <div className="grid lg:grid-cols-8 mb-4">
                 <div className="xl:col-span-6 lg:col-span-5">
                     <div className="ml-10 mt-10">
-                        <h1 className="text-5xl font-bold text-900 text-green-500">APRIADI</h1>
+                        <h1 className="text-5xl font-bold text-900 text-green-500">M. SUBHAN. S.H</h1>
                         <p className="mt-3 text-gray-500 text-2xl font-thin">Junior Javascript Developer</p>
                     </div>
                 </div>
@@ -18,21 +18,21 @@ const ResumeComponent = () => {
                     </div>
                     <div className="flex ml-5">
                         <FontAwesomeIcon icon={faMailBulk} className="h-3 w-3 bg-gray-500 p-0.5 rounded-sm text-white mt-1 mr-5"/>
-                        <p>apripeni15@gmail.com</p>
+                        <p>adv.subhan@gmail.com</p>
                     </div>
                     <div className="flex ml-5">
                         <FontAwesomeIcon icon={faGlobe} className="h-3 w-3 bg-gray-500 p-0.5 rounded-sm text-white mt-1 mr-5"/>
-                        <p>www.dev-apriadi.com</p>
+                        <p>www.adv-subhan.com</p>
                     </div>
                     <div className="flex ml-5">
                         <FontAwesomeIcon icon={faMapPin} className="h-3 w-3 bg-gray-500 p-0.5 rounded-sm text-white mt-1 mr-5"/>
-                        <p>Bandung</p>
+                        <p>Kalsel</p>
                     </div>
                 </div>
             </div>
             <div className="border-b-2 mx-5 lg:mx-10"></div>
             <div className="md:flex md:mx-5 lg:mx-10 mt-5">
-                <img src="/apriadi3.jpg" className="w-28 h-28 rounded-full mx-auto mb-5"/>
+                <img src="/subhan6.jpeg" className="w-28 h-28 rounded-full mx-auto mb-5"/>
                 <p className="mx-10 text-math text-sm text-gray-600">
                     Summarise your career here. You can make a PDF version of your resume using our free Sketch template here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
                 </p>
@@ -47,17 +47,17 @@ const ResumeComponent = () => {
                         <div>
                             <div className="grid lg:grid-cols-9">
                                 <div className="col-span-6">
-                                    <p className="font-semibold text-math">Junior Backend Developer</p>
+                                    <p className="font-semibold text-math">Anggota Advokat Bersatu Indonesia</p>
                                 </div>
                                 <div className="col-span-3">
-                                    <p className="text-xs text-gray-600 mt-1 text-math text-right mr-2">PT. Intersolusi Teknologi Asia | 2021 - Present</p>
+                                    <p className="text-xs text-gray-600 mt-1 text-math text-right mr-2">Perkumpulan Advokat | 2021 - Present</p>
                                 </div>
                             </div>
                             <div>
                                 <p className="text-sm mt-2 text-justify mr-5 text-math text-gray-700">Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis.</p>
                                 <ul className="list-disc text-math ml-10 mt-2 text-sm text-gray-700">
-                                    <li>Development Software</li>
-                                    <li>Learn New Technology</li>
+                                    <li>Menghadiri pertemuan advokat se-Indonesia</li>
+                                    <li>Diskusi penting bersama para pejabat pemerintah pusat</li>
                                 </ul>
                             </div>
                         </div>

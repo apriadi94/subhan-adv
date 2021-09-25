@@ -12,7 +12,7 @@ const Layout = ({children, props}) => {
             <GlobalProvider>
                 <Head>
                     <title>{props.title}</title>
-                    <meta name="description" content="Portfolio Apriadi, S.Si" />
+                    <meta name="description" content="Adv. Subhan" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
 
                 </Head>
@@ -25,7 +25,7 @@ const Layout = ({children, props}) => {
                                 </svg>
                             </button>
                             <div className="w-full h-12">
-                                <h1 className="text-center h-12 text-3xl text-math mt-2 font-bold text-white mr-10">Apriadi</h1>
+                                <h1 className="text-center h-12 text-3xl text-math mt-2 font-bold text-white mr-10">M. Subhan</h1>
                             </div>
                         </div>
                     </div>

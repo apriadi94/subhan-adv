@@ -19,11 +19,11 @@ const ProjectListComponent = () => {
             if(active === 'all'){
                 setProjects(res.data)
             }
-            if(active === 'android'){
-                setProjects(res.data.filter(project => project.type === 'android'))
+            if(active === 'perdata'){
+                setProjects(res.data.filter(project => project.type === 'perdata'))
             }
-            if(active === 'web'){
-                setProjects(res.data.filter(project => project.type === 'web'))
+            if(active === 'pidana'){
+                setProjects(res.data.filter(project => project.type === 'pidana'))
             }
         })
         setLoading(false)
@@ -36,12 +36,12 @@ const ProjectListComponent = () => {
     return(
         <div className="mt-12">
             <div className="grid grid-cols-3  mx-auto w-96">
-                <p onClick={() => setActive('all')} className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'all' ? 'border-b-4' : null}`}>All</p>
-                <p onClick={() => setActive('web')} className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'web' ? 'border-b-4' : null}`}>Web App</p>
-                <p onClick={() => setActive('android')}  className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'android' ? 'border-b-4' : null}`}>Android App</p>
+                <p onClick={() => setActive('all')} className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'all' ? 'border-b-4' : null}`}>Semua</p>
+                <p onClick={() => setActive('perdata')} className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'web' ? 'border-b-4' : null}`}>Perdata</p>
+                <p onClick={() => setActive('pidana')}  className={`cursor-pointer hover:text-gray-800 text-center font-bold text-math text-gray-500 text-sm ${active === 'android' ? 'border-b-4' : null}`}>Pidana</p>
             </div>
             <div>
-                <QueueAnim  className="lg:grid grid-cols-2 p-10 mx-11 mt-5 lg:mx-0 gap-4"
+                <QueueAnim  className="lg:grid grid-cols-2 p-10 mt-5 lg:mx-0 gap-4"
                  type="bottom"
                  interval={[100, 0]}
                  duration={[130, 0]}
